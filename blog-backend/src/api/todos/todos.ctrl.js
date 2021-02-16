@@ -86,7 +86,7 @@ export const finish = async (ctx) => {
       })
       .exec();
 
-    ctx.body = todo;
+    ctx.body = 'updated';
   } catch (e) {
     ctx.throw(500, e);
   }
